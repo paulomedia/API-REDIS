@@ -1,0 +1,38 @@
+{
+  "name": "api-redis",
+  "distName": "Redis API",
+  "description": "NodeJS project",
+  "projectType": "server",
+  "author": {
+    "name": "Personal Project",
+    "email": "paulo.media@gmail.com"
+  },
+  "contributors": [],
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 6.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulomedia/API-REDIS.git"
+  },
+  "scripts": {
+    "start:app": "node ./src/app.js nobuild",
+    "start": "node ./src/server_testing.js nobuild",
+    "rebuild": "node ./node_modules/rtve-ci-build/index.js",
+    "testOne": "jasmine spec/jasmine_examples/PlayerSpec.js",
+    "test": "jasmine **/src/test/specs/*spec.js",
+    "depstree": "ci-build a-deps",
+    "gitflow": "ci-build gf",
+    "linguist": "ci-build linguist"
+  },
+  "dependencies": {
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "jasmine": "^3.1.0",
+    "sinon": "^6.1.4"
+  }
+}
