@@ -1,2 +1,2 @@
 # Node-Services
-Services for NodeJS
+CRUD operations against REDIS BD
